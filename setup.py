@@ -1,5 +1,5 @@
 '''we create setup.py because of 2 reasons 
-1) if we realising and type of packages
+1) if we realising any type of packages
 2) we are using for the MLOPS part where version control coming to picture  
 ex:  1.2.4 -> error then we change 1.2.5 '''
 
@@ -13,7 +13,7 @@ DESCRIPTION = "This is our Machine learning project"
 
 REQUIREMENT_FILE_NAME = "requirements.txt"
 
-HYPHEN_E_DOT = "-e ." # for running the project again and again we need to remove -e . orelse it will give error
+HYPHEN_E_DOT = "-e ." #for running the project again and again we need to remove -e . orelse it will give error
 
 
 def get_requirements_list() -> List[str]:
