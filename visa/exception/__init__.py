@@ -19,16 +19,17 @@ class CustomException(Exception):
         error_message = f"""
         Error occured in script: 
         [ {file_name} ] at 
-        try block line number: [{try_block_line_number}] and exception block line number: [{exception_block_line_number}] 
+        try block line number: [{try_block_line_number}] and 
+        exception block line number: [{exception_block_line_number}] 
         error message: [{error_message}]
         """
         return error_message
 
-    def __str__(self):
+    def __str__(self):  #__str__ used for creating output that is human-readable are must be for end-users or string is intended for users . 
         return self.error_message
 
 
-    def __repr__(self) -> str:
+    def __repr__(self) -> str:  #__repr__ must serve the purpose of debugging and development or string is intended for developers.
         return CustomException.__name__.str()
 
         
